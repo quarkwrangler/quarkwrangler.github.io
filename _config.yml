@@ -1,6 +1,7 @@
 title: Quark rodeo
 description: Physics and the firmware of the universe
 theme: minima
+url: https://quark.rodeo
 
 minima:
   skin: auto
