@@ -1,5 +1,5 @@
 ---
-layout: math
+layout: mathjax
 title: What is physics?
 ---
 
