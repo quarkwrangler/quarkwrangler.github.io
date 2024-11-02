@@ -23,8 +23,8 @@ In the previous post, we also saw how square matrices represent operators which 
 
 We get more interesting operators when we attempt to build observables for things outside of the basis we're working with. The bounciness matrix looks like $$\hat b\doteq\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}$$. Note that I have factored out the units and put them in front of the matrix. We can confirm that the eigenvalues of this matrix give us the correct measurements from above:
 
-$$\hat b \ket{\text{0 flop}}=\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}=0$$
+$$\hat b \ket{\text{0 flop}}=\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}=0\doteq\text{0 flop}\ket{\text{0 flop}}$$
 
-$$\hat b \ket{\text{1 flop}}=\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}=\text{(1 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}$$
+$$\hat b \ket{\text{1 flop}}=\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}=\text{(1 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}\doteq\text{1 flop}\ket{\text{0 flop}}$$
 
-$$\hat b \ket{\text{2 flop}}=\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}=\text{(2 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}$$
+$$\hat b \ket{\text{2 flop}}=\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}=\text{(2 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}\doteq\text{2 flop}\ket{\text{2 flop}}$$
