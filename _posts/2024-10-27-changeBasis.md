@@ -1,6 +1,6 @@
 ---
 layout: mathjax
-title: Mutually exclusive measurements from noncommuting observables
+title: More than one basis and the order of measaurement
 ---
 
 ((This post is a work in progress))
@@ -25,16 +25,20 @@ In the previous post, we also saw how square matrices represent operators which 
 
 We get more interesting operators when we attempt to build observables for things outside of the basis we're working with. The bounciness matrix looks like $$\hat B\doteq\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}$$. Note that I have factored out the units and put them in front of the matrix. We can confirm that the eigenvalues of this matrix give us the correct measurements from above:
 
-$$\hat B \ket{\text{0 flop}}=\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}=0\doteq\text{0 flop}\ket{\text{0 flop}}$$
+$$\hat B \ket{\text{0 flop}}\doteq\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}=0\doteq\text{0 flop}\ket{\text{0 flop}}$$
 
-$$\hat B \ket{\text{1 flop}}=\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}=\text{(1 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}\doteq\text{1 flop}\ket{\text{1 flop}}$$
+$$\hat B \ket{\text{1 flop}}\doteq\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}=\text{(1 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}\doteq\text{1 flop}\ket{\text{1 flop}}$$
 
-$$\hat B \ket{\text{2 flop}}=\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}=\text{(2 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}\doteq\text{2 flop}\ket{\text{2 flop}}$$
+$$\hat B \ket{\text{2 flop}}\doteq\frac{\sqrt2}{2}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}=\text{(2 flop)}\frac{\sqrt2}2\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}\doteq\text{2 flop}\ket{\text{2 flop}}$$
 
 Now, remember how I said that the order of measurement matters? Our observable matrices help us show this. If the order of measurement didn't matter, we might expect that applying the matrices representing those measurmements in either order would give the same results, which is to say that $$\hat B\hat C=\hat C \hat B$$: the products of the matrices are equal in either order. We can rewrite this equation as $$[\hat B,\hat C]=0$$, where the brackets represent what is called the commutator: $$[X,Y]=XY-YX$$. Let's find the actual commutator of $$\hat B$$ and $$\hat C$$ and see whether it equals zero:
 
-$$[\hat B,\hat C]=\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\text{(wiggle)}\begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{bmatrix}-\text{(wiggle)}\begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{bmatrix}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}$$
+$$[\hat B,\hat C]\doteq\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}\text{(wiggle)}\begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{bmatrix}-\text{(wiggle)}\begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{bmatrix}\text{(flop)}*\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -\frac12 \\ 0 & -\frac12 & \frac32 \end{bmatrix}$$
 
 $$=\text{(flop*wiggle)}\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & -1 \\ 0 & -\frac12 & 3 \end{bmatrix}-\text{(wiggle*flop)}\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac32 & 0 \\ 0 & 0 & 3 \end{bmatrix}=\text{(flop*wiggle)}\begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & -\frac12 & 0 \end{bmatrix}$$
 
 The commutator is not equal to the zero matrix, so we expect that the order of measurement matters. We expect that the basis for bounciness is not the same as the basis for curviness. When you have finite matrices like these where you can clearly see that one of the matrices is diagonal and the other one isn't, these are trivial statements, but if you have an operator with an infinite basis which can't be represented by an explicit matrix then it might be less obvious that this is the case, and the intuition we get from working with finite matrices can be helpful for us.
+
+## Changing the representation
+
+I have scrupulously used the same basis every time I write a column vector or a matrix, but as I repeatedly said above, bounciness should also be a good basis. What does that actually mean? It means that all of the physics must continue to work if I instead define $$\ket{\text{0 flop}}\doteq\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$$, $$\ket{\text{1 flop}}\doteq\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$$, and $$\ket{\text{2 flop}}\doteq\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$$. This means that all of my bounciness operator is now diagonal: $$\hat B\doteq\text{flop}\begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{bmatrix}$$. My curviness basis states are now more complicated, and my curviness operator is no longer diagonal. This is why I have used the symbol $$\doteq$$ when writing column/row vectors and matrices. They are not unique. We can use whatever basis we want to write our explicit representations. I could even go wild and define $$\ket{\text{1 flop}}\doteq\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$$, $$\ket{\text{0 flop}}\doteq\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$$, and $$\ket{\text{2 flop}}\doteq\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$$, and then my bounciness operator would become $$\hat B\doteq\text{flop}\begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 2 \end{bmatrix}$$. But in any case, my commutator for bounciness and curviness will be nonzero and my inner products (brakets) will have the same values. Quantum mechanics must work no matter what basis you use, as long as you're consistent.
