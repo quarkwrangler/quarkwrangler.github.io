@@ -7,9 +7,11 @@ Newton's laws of motion are often the first things peopole learn about physics. 
 
 ## An intuitive explanation of Newton's second law
 
-Let's take a look at the equation:
+Let's take a look at the equation in a less traditional equivalent form:
 
 $$\vec{F}=m\frac{d}{dt}\vec{v}$$
+
+Newton's second law is used to describe a single object. The symbols refer to physics quantities which are understood to correspond to that single object. I'll explain all of the terms later, but the force is a force on the object. The mass and velocity are the mass and velocity of the object.
 
 The first symbol we find in this equation is $$\vec F$$, which represents force. A force can be thought of as a push or a pull. If you touch something, then you put a force on it. If you pull on a spring, you can feel it pulling back on you, which means that the spring is exerting a force away from you. Note that $$\vec F$$ has a funny arrow over it. That means that force is represented by a mathematical object called a vector. Vectors have both a size and a direction. You can push really hard or not that hard on things, and you can push them in different directions. 
 
