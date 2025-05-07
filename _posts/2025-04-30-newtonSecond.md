@@ -79,7 +79,7 @@ It is an observed fact that solid objects do not move through each other. Gravit
 
 Consider an object with mass $$M$$ at rest on the ground. We know that gravity pulls the object downward, but solid objects cannot move through solid ground, and so we know that the object's velocity must be constantly zero relative to the ground. Assuming that we're working in the ground frame, a constant velocity means zero acceleration and thus zero net force. Because we know that the force of gravity is $$M(10~m/s^2)$$ downward, the contact force must be equal and opposite.
 
-Now consider an object with mass M sitting on the floor of an elevator which is accelerating upward at 1 m/s2. By Newton's second law, the net force on the object must be $$M(1~m/s^2)$$ upward, and if gravity is $$M(10~m/s^2)$$ downward, than the contact force which stops the object from passing through the floor of the elevator must be $$M(11~m/s^22)$$ upward.
+Now consider an object with mass M sitting on the floor of an elevator which is accelerating upward at $$1~m/s^2$$. By Newton's second law, the net force on the object must be $$M(1~m/s^2)$$ upward, and if gravity is $$M(10~m/s^2)$$ downward, than the contact force which stops the object from passing through the floor of the elevator must be $$M(11~m/s^2)$$ upward.
 
 # Static friction
 
